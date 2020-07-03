@@ -1,0 +1,23 @@
+Cache size in KBytes 16384
+Cache size in KBytes 16
+number of data 4096
+Cache assoc 8
+Cache blocksize 16
+BlockShift 4
+TagBitNum 51
+BlockShift 4
+EntryNum 128
+IndexBitNum 7
+GHRP
+0
+  MPKBr_1K         	 :   220.0000  MPKBr_10K         	 :    61.9000  MPKBr_100K         	 :    35.4000  MPKBr_1M         	 :     4.3780  MPKBr_10M         	 :     4.7897  MPKBr_30M         	 :     4.1623  MPKBr_60M         	 :     5.8616  MPKBr_100M         	 :     5.2511  TRACE 	 : /home/shyngys/cbp2016.eval/traces/LONG_SERVER-4.bt9.trace.gz  NUM_INSTRUCTIONS            	 :  783804269  NUM_BR                      	 :  142401977  NUM_UNCOND_BR               	 :   39056475  NUM_CONDITIONAL_BR          	 :  103345502  NUM_MISPREDICTIONS          	 :     599044  MISPRED_PER_1K_INST         	 :     0.7643
+**********
+
+Misses: 4413992
+Hits: 137987986
+Total Accesses: 284803956
+MissRate (misses per 1000 insts): 30.996704273
+Replaced: 3867208
+Bypassed: 545760
+ConflictMisses: 4412968
+

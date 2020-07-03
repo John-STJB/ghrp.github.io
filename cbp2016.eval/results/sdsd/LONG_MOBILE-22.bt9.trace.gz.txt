@@ -1,0 +1,1 @@
+usage: /home/shyngys/cbp2016.eval/sim/predictor <trace> <policy>
