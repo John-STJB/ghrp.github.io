@@ -19,7 +19,7 @@ small number of sets. [related paper](https://ieeexplore.ieee.org/stamp/stamp.js
 
 **__Note:__**
   - Sampling-based dead block predictors such as SDBP[[2]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5695535) are not suitable for the instruction cache. PC-based predictors exploit the observation that, if a block in the data cache is accessed by a given PC and becomes dead, other blocks accessed by the same PC in other sets are likely to become dead as well. Set-sampling allows the predictor to learn from only a small number of sets, allowing the metadata store to be very small. Unfortunately, instruction streams do not allow for set-sampling in this way since the PC itself forms the index into the I-cache.
-![Figure of SDBP problem](https://github.com/shyngys-aitkazinov/ghrp.github.io/images/DeadBlockProblem.png)  
+![SDBP](https://github.com/shyngys-aitkazinov/ghrp.github.io/blob/master/DeadBlockProblem.png?raw=true)  
 
 ```markdown
 Syntax highlighted code block
