@@ -41,18 +41,18 @@ Randomly selects a candidate item and discards it to make space when necessary. 
 SRRIP [[1]](https://people.csail.mit.edu/emer/papers/2010.06.isca.rrip.pdf) keeps track of the recency of blocks by predicting blocks that will be re-referenced again in the cache. Each block is associated with a two-bit re-reference prediction value. An initial prediction is made on block placement and revised when a block is reused or replace. The pseudocode and the simulation of the SRRIP with 2 bit counters are illustrated below.  
 ```python
 Cache Hit:
-  (i) set RRPV of block to ‘0’
+  (i) set RRPV of block to 0
 Cache Miss:
-  (i) search for first ‘3’ from left
-  (ii) if ‘3’ found go to step (v)
+  (i) search for first 3 from left
+  (ii) if 3 found go to step (v)
   (iii) increment all RRPVs
   (iv) goto step (i)
-  (v) replace block and set nru-bit to ‘1’ (v) replace block and set RRPV to ‘2’
+  (v) replace block and set nru-bit to 1 (v) replace block and set RRPV to 2
  ``` 
 ![RRIP problem](https://github.com/shyngys-aitkazinov/ghrp.github.io/blob/master/images/RRIP.png?raw=true)  
 
-## GHRP (Global History )
-This is the design proposed in the paper. The main idea is to keep the instructions in the cache which will be reused in the future and bypass the instructions which will soon evicted without cache-hits to that block. The pseudocode of the GHRP access algorithm is as followed:
+## GHRP (Global History Reuse Predictor)
+This is the design proposed in the paper. The main idea is to keep the instructions in the cache which will be reused in the future and bypass the instructions which will soon evicted without cache-hits to that block. The design relies on the Global History of I-Cache accesses and correlates it with the reuse counters in prediction tables. This is required to predict whether the fetched blocked should be placed or bypassed. The pseudocode of the GHRP access algorithm is as following:
 
 
 ```python
@@ -61,33 +61,32 @@ Algorithm 1 GHRP
 2: int predTables[numCounts][numPredTables] 
 3: int indices[numPredTables] 
 4: procedure Access(int PC) 
-5: 	sign ← signature(PC, history) 
-6:	indices ← ComputeIndices(sign)
-7: 	cntrsNew ← GetCounters(predTables, indices) 
-8: 	set ← calcSet(PC, cache) 
-9: 	tag ← calcTag(PC, cache) 
-10: 	isMissed ← isTagMatch(PC, cache) 
+5: 	sign = signature(PC, history) 
+6:	indices = ComputeIndices(sign)
+7: 	cntrsNew = GetCounters(predTables, indices) 
+8: 	set = calcSet(PC, cache) 
+9: 	tag = calcTag(PC, cache) 
+10: 	isMissed = isTagMatch(PC, cache) 
 11: 	if isMissed = true then           # miss 
 12: 		bypass←majorityVote(cntrsNew, bypassThresh) 
 13: 		if bypass = false then 
-14: 			block ← victimBlock(set) 
-15: 			indices ← ComputeIndices(block.signature) 
-16: 			isDead ← true 
+14: 			block = victimBlock(set) 
+15: 			indices = ComputeIndices(block.signature) 
+16: 			isDead = true 
 17: 			updatePredTables(indices, isDead) 
 18: 			pred←MajorityVote(cntrsNew, deadThresh) 
-19:			block.dead ← pred 
-20: 			block.tag ← tag 
+19:			block.dead = pred 
+20: 			block.tag = tag 
 21: 	else                          # hit 
-22: 		block ← matchedBlock(set, tag)
-23: 		indices ← ComputeIndices(block.signature) 
-24: 		isDead ← false 
+22: 		block = matchedBlock(set, tag)
+23: 		indices = ComputeIndices(block.signature) 
+24: 		isDead = false 
 25: 		updatePredTables(indices, isDead)
-26: 		pred ← MajorityVote(cntrsNew, deadThresh) 
-27: 		block.dead ← pred 
-28: 	block.signature ← sign 
-29: 	history ← UpdatePathHist(PC) 
+26: 		pred = MajorityVote(cntrsNew, deadThresh) 
+27: 		block.dead = pred 
+28: 	block.signature = sign 
+29: 	history = UpdatePathHist(PC) 
 30: 	updateLRUstackPosition()
-
 ```
 
 
