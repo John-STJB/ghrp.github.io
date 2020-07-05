@@ -68,13 +68,13 @@ Algorithm 1 GHRP
 9: 	tag = calcTag(PC, cache) 
 10: 	isMissed = isTagMatch(PC, cache) 
 11: 	if isMissed = true then           # miss 
-12: 		bypass←majorityVote(cntrsNew, bypassThresh) 
+12: 		bypass = majorityVote(cntrsNew, bypassThresh) 
 13: 		if bypass = false then 
 14: 			block = victimBlock(set) 
 15: 			indices = ComputeIndices(block.signature) 
 16: 			isDead = true 
 17: 			updatePredTables(indices, isDead) 
-18: 			pred←MajorityVote(cntrsNew, deadThresh) 
+18: 			pred = MajorityVote(cntrsNew, deadThresh) 
 19:			block.dead = pred 
 20: 			block.tag = tag 
 21: 	else                          # hit 
