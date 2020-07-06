@@ -3,7 +3,9 @@
 # 
 #*************************************************************
 #
-
+# The perl scripts were not used in the project, Shyngys Aitkazinov
+# But, note the dependencies for the project. e.g. BOOST library 
+#
 For CBP2016, we have tried to preserve structure and organization of the CBP2014 framework. Most the scripts have kept the same names and directory structure is maintained. 
 
 For CBP2016 we have 200 short traces and 23 long traces. Out of 200 Short traces 139 are server and 61 are mobile traces. Long traces have 19 Mobile and 4 server benchmarks.These traces are provided in BT9 format along with a BT9 reader and user manual.
