@@ -1,0 +1,53 @@
+Cache size in KBytes 16384
+Cache size in KBytes 16
+number of data 4096
+Cache assoc 8
+Cache blocksize 16
+BlockShift 4
+TagBitNum 51
+BlockShift 4
+EntryNum 128
+IndexBitNum 7
+LRU
+0
+  MPKBr_1K         	 :   105.0000
+Misses: 155
+Hits: 844
+Total Accesses: 999
+MissRate (misses per 1000 insts): 155.155155155
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_10K         	 :    90.3000
+Misses: 1018
+Hits: 8981
+Total Accesses: 9999
+MissRate (misses per 1000 insts): 101.810181018
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_100K         	 :    39.2500
+Misses: 3835
+Hits: 96164
+Total Accesses: 99999
+MissRate (misses per 1000 insts): 38.350383504
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_1M         	 :     6.1810
+Misses: 7104
+Hits: 992895
+Total Accesses: 999999
+MissRate (misses per 1000 insts): 7.104007104
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_10M         	 :     4.2184
+Misses: 23840
+Hits: 9976159
+Total Accesses: 9999999
+MissRate (misses per 1000 insts): 2.384000238
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_30M         	 :     5.3280  MPKBr_60M         	 :     3.6355

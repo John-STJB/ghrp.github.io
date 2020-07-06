@@ -1,0 +1,55 @@
+Cache size in KBytes 16384
+Cache size in KBytes 16
+number of data 4096
+Cache assoc 8
+Cache blocksize 16
+BlockShift 4
+TagBitNum 51
+BlockShift 4
+EntryNum 128
+IndexBitNum 7
+GHRP
+0
+  MPKBr_1K         	 :   150.0000
+Misses: 32
+Hits: 967
+Total Accesses: 1998
+MissRate (misses per 1000 insts): 32.032032032
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_10K         	 :   112.7000
+Misses: 39
+Hits: 9960
+Total Accesses: 19998
+MissRate (misses per 1000 insts): 3.900390039
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_100K         	 :    81.1300
+Misses: 254
+Hits: 99745
+Total Accesses: 199998
+MissRate (misses per 1000 insts): 2.540025400
+Replaced: 16
+Bypassed: 41
+ConflictMisses: 57
+  MPKBr_1M         	 :    63.4600
+Misses: 518
+Hits: 999481
+Total Accesses: 1999998
+MissRate (misses per 1000 insts): 0.518000518
+Replaced: 49
+Bypassed: 103
+ConflictMisses: 152
+  TRACE 	 : /home/shyngys/cbp2016.eval/traces/SHORT_MOBILE-90.bt9.trace.gz  NUM_INSTRUCTIONS            	 :  110000000  NUM_BR                      	 :    9754938  NUM_UNCOND_BR               	 :     402279  NUM_CONDITIONAL_BR          	 :    9352659  NUM_MISPREDICTIONS          	 :     587908  MISPRED_PER_1K_INST         	 :     5.3446
+**********
+
+Misses: 4813
+Hits: 9750126
+Total Accesses: 19509878
+MissRate (misses per 1000 insts): 0.493391091
+Replaced: 2230
+Bypassed: 2073
+ConflictMisses: 4303
+

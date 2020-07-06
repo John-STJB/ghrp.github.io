@@ -1,0 +1,63 @@
+Cache size in KBytes 16384
+Cache size in KBytes 16
+number of data 4096
+Cache assoc 8
+Cache blocksize 16
+BlockShift 4
+TagBitNum 51
+BlockShift 4
+EntryNum 128
+IndexBitNum 7
+RANDOM
+0
+  MPKBr_1K         	 :   216.0000
+Misses: 288
+Hits: 711
+Total Accesses: 999
+MissRate (misses per 1000 insts): 288.288288288
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_10K         	 :    93.9000
+Misses: 1406
+Hits: 8593
+Total Accesses: 9999
+MissRate (misses per 1000 insts): 140.614061406
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_100K         	 :    46.8200
+Misses: 6384
+Hits: 93615
+Total Accesses: 99999
+MissRate (misses per 1000 insts): 63.840638406
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_1M         	 :    10.3830
+Misses: 80496
+Hits: 919503
+Total Accesses: 999999
+MissRate (misses per 1000 insts): 80.496080496
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_10M         	 :     3.9665
+Misses: 892483
+Hits: 9107516
+Total Accesses: 9999999
+MissRate (misses per 1000 insts): 89.248308925
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+  MPKBr_30M         	 :     2.3945  MPKBr_60M         	 :     1.8435  MPKBr_100M         	 :     1.6589  TRACE 	 : /home/shyngys/cbp2016.eval/traces/LONG_SERVER-1.bt9.trace.gz  NUM_INSTRUCTIONS            	 : 1352717599  NUM_BR                      	 :  212149426  NUM_UNCOND_BR               	 :   66343886  NUM_CONDITIONAL_BR          	 :  145805540  NUM_MISPREDICTIONS          	 :     291725  MISPRED_PER_1K_INST         	 :     0.2157
+**********
+
+Misses: 19341425
+Hits: 192808002
+Total Accesses: 212149427
+MissRate (misses per 1000 insts): 91.168876926
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+

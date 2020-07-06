@@ -50,4 +50,14 @@ MissRate (misses per 1000 insts): 2.767200277
 Replaced: 0
 Bypassed: 0
 ConflictMisses: 0
-  MPKBr_30M         	 :     6.2718  MPKBr_60M         	 :     3.2421  MPKBr_100M         	 :     1.9472
+  MPKBr_30M         	 :     6.2718  MPKBr_60M         	 :     3.2421  MPKBr_100M         	 :     1.9472  MPKBr_300M         	 :     0.6824  TRACE 	 : /home/shyngys/cbp2016.eval/traces/LONG_MOBILE-17.bt9.trace.gz  NUM_INSTRUCTIONS            	 : 1688784689  NUM_BR                      	 :  436394748  NUM_UNCOND_BR               	 :  112850745  NUM_CONDITIONAL_BR          	 :  323544003  NUM_MISPREDICTIONS          	 :     264906  MISPRED_PER_1K_INST         	 :     0.1569
+**********
+
+Misses: 186387
+Hits: 436208362
+Total Accesses: 436394749
+MissRate (misses per 1000 insts): 0.427106422
+Replaced: 0
+Bypassed: 0
+ConflictMisses: 0
+
